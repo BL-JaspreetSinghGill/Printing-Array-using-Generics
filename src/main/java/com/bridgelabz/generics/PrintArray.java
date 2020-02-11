@@ -11,20 +11,8 @@ public class PrintArray {
         toPrint(characterArray);
     }
 
-    private static void toPrint(Integer[] array) {
-        for (Integer i: array) {
-            System.out.println(i);
-        }
-    }
-
-    private static void toPrint(Double[] array) {
-        for (Double i: array) {
-            System.out.println(i);
-        }
-    }
-
-    private static void toPrint(Character[] array) {
-        for (Character i: array) {
+    private static <T> void toPrint(T[] array) {
+        for (T i: array) {
             System.out.println(i);
         }
     }
